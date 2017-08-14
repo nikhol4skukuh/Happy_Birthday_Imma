@@ -1,8 +1,53 @@
 html {
-background-color: beige;
+background-color: #3a3c3d;
 }
 
 body {
-font-family: "Work Sans", "Rubik", "Merriweather", sans-serif, serif;
-padding: 20px;
+font-family: "Permanent Marker", "Rubik", "Merriweather", sans-serif, serif;
+padding: 40px;
+color: white;
+}
+
+header {
+font-size: 3.5rem;
+text-align: center;
+}
+
+p {
+font-family: Merriweather;
+font-weight: 300;
+font-size: 1.5rem;
+text-align: center;
+}
+
+.title {
+font-family: "Permanent Marker";
+letter-spacing: 0.4em;
+}
+
+#heb {
+font-family: "Rubik";
+}
+
+.videos {
+display: flex;
+flex-direction: row;
+}
+
+.pictures {
+display: flex;
+}
+
+#avideo, #fvideo {
+flex: 1;
+height: 300px;
+border: 2px solid black;
+margin: 20px;
+}
+
+#apic1, #fpic1, #apic2, #fpic2 {
+flex: 1;
+height: 200px;
+border: 2px solid black;
+margin: 20px;
 }
