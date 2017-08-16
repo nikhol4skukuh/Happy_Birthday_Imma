@@ -1,0 +1,115 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+html {
+max-width: 960px;
+}
+
+body {
+  background-color: #444649;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 16px;
+  margin: 0 auto;
+  color: snow;
+}
+
+main {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-areas:
+    "header header header"
+    "navigation navigation navigation"
+    "content content sidebar"
+    "content content sidebar"
+    "footer footer footer"
+}
+
+header {
+  grid-area: header;
+  background-image: url('../media/annie-spratt-96526-1000.jpg');
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+nav {
+  grid-area: navigation;
+}
+
+aside {
+  grid-area: sidebar;
+  border: 2px solid #3c3e42;
+  border-radius: 10px;
+  background-color: #3c3e42;
+}
+
+article {
+  grid-area: content;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer {
+  grid-area: footer;
+  border: 2px solid #3c3e42;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #3c3e42;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+
+img {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+a {
+  color: #3a80c4;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+
+#soon {
+text-transform: uppercase;
+color: darkred;
+border: 4px solid darkred;
+background-color: snow;
+padding: 20px;
+font-family: Merriweather;
+font-size: 1.5rem;
+text-align: right;
+}
+
+li {
+  flex: 1;
+  list-style-type: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #3c3e42;
+}
+
+li a {
+  text-decoration: none;
+  color: snow;
+  font-weight: bold;
+}
+
+li > a:active {
+  background-color: #5b5e63;
+}
+
+li a:hover {
+  background-color: #4d5668;
+}
