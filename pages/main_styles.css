@@ -4,15 +4,23 @@ box-sizing: border-box;
 
 body {
 font-family: "Permanent Marker", "Rubik", "Merriweather", sans-serif, serif;
-background-color: beige;
-padding: 20px;
+background-color: rgb(39, 41, 48);
+color: snow;
+padding: 10px;
 max-width: 1000px;
 margin: 0 auto;
 }
 
 header {
+background-image: url('../media/annie-spratt-96533-1000.jpg');
+background-repeat: no-repeat;
+height: 400px;
+}
+
+h1 {
 font-size: 3.5rem;
 text-align: center;
+text-shadow: 4px 4px 2px black;
 }
 
 p {
@@ -20,9 +28,12 @@ font-family: Merriweather;
 font-weight: 300;
 font-size: 1.5rem;
 text-align: center;
+padding-left: 5px;
+padding-right: 5px;
 }
 
-.title {
+.eng {
+z-index: 1;
 font-family: "Permanent Marker";
 letter-spacing: 0.4em;
 }
@@ -30,6 +41,12 @@ letter-spacing: 0.4em;
 #heb {
 font-family: "Rubik";
 }
+
+/*#title {
+display: inline;
+padding: 0.5rem 0.25rem 0;
+vertical-align: bottom;
+}*/
 
 #video-container {
 display: flex;
@@ -48,12 +65,10 @@ height: 300px;
 width: 450px;
 max-height: 300px;
 min-width: 310px;
-/* border: 2px inset black; */
 margin: 0 auto;
 position: relative;
 padding-bottom: 56.25%;
-padding-top: 30px;
-
+padding-top: 10px;
 overflow: hidden;
 }
 
@@ -93,8 +108,47 @@ margin: 20px;
 
 /* Resizing for iPhone screen */
 
+@media (max-width: 480px) {
+  header {
+    background-image: url('../media/annie-spratt-96533-480.jpg');
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    padding: 0 5px;
+  }
+
+  .eng {
+    font-family: "Permanent Marker";
+    letter-spacing: 0.1em;
+    /*font-size: 2.5rem;*/
+  }
+
+  #heb {
+  /*font-size: 2.5rem;*/
+  }
+
+  iframe, object, embed {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  max-width: 450px;
+  }
+
+  body {
+  padding: 5px;
+  overflow-x: hidden;
+  }
+}
+
 @media (max-width: 320px) {
-  .title {
+  header {
+    background-image: url('../media/annie-spratt-96533-320.jpg');
+    height: 165px;
+  }
+
+  .eng {
     font-family: "Permanent Marker";
     letter-spacing: 0.1em;
     font-size: 2.5rem;

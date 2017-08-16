@@ -23,6 +23,7 @@ h1 {
 font-family: "Permanent Marker";
 font-size: 3.0rem;
 letter-spacing: 0.4rem;
+text-shadow: 4px 5px 4px black;
 }
 
 a, a:active {
