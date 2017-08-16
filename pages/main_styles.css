@@ -1,0 +1,118 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: "Permanent Marker", "Rubik", "Merriweather", sans-serif, serif;
+background-color: beige;
+padding: 20px;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+header {
+font-size: 3.5rem;
+text-align: center;
+}
+
+p {
+font-family: Merriweather;
+font-weight: 300;
+font-size: 1.5rem;
+text-align: center;
+}
+
+.title {
+font-family: "Permanent Marker";
+letter-spacing: 0.4em;
+}
+
+#heb {
+font-family: "Rubik";
+}
+
+#video-container {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+#pic-container {
+display: flex;
+flex-wrap: wrap;
+}
+
+#avideo, #fvideo {
+flex: 1;
+height: 300px;
+width: 450px;
+max-height: 300px;
+min-width: 310px;
+/* border: 2px inset black; */
+margin: 0 auto;
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+
+overflow: hidden;
+}
+
+iframe, object, embed {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+#apic1, #fpic1, #apic2, #fpic2 {
+flex: 1;
+height: 200px;
+border: 2px solid black;
+margin: 20px;
+}
+
+/* Grid styling */
+
+@supports (display: grid) {
+  main {
+  margin: 0;
+  }
+
+  #video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-template-rows: repeat(auto-fit, minmax(310px, auto));
+  grid-gap: 10px;
+  }
+
+  #pic-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  }
+}
+
+/* Resizing for iPhone screen */
+
+@media (max-width: 320px) {
+  .title {
+    font-family: "Permanent Marker";
+    letter-spacing: 0.1em;
+    font-size: 2.5rem;
+  }
+
+  #heb {
+  font-size: 2.5rem;
+  }
+
+  iframe, object, embed {
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  max-width: 300px;
+  }
+
+  body {
+  padding: 5px;
+  overflow-x: hidden;
+  }
+}

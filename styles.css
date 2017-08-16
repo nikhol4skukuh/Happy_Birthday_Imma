@@ -1,52 +1,35 @@
 html {
-background-color: beige;
+box-sizing: border-box;
 }
 
 body {
-font-family: "Permanent Marker", "Rubik", "Merriweather", sans-serif, serif;
-padding: 40px;
+max-width: 960px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin: 0 auto;
 }
 
-header {
-font-size: 3.5rem;
-text-align: center;
+#entry {
+display: flex;
+flex-direction: column;
 }
 
-p {
-font-family: Merriweather;
-font-weight: 300;
-font-size: 1.5rem;
-text-align: center;
+h1, #gift, a {
+flex: 1;
+align-self: center;
 }
 
-.title {
+h1 {
 font-family: "Permanent Marker";
-letter-spacing: 0.4em;
+font-size: 3.0rem;
+letter-spacing: 0.4rem;
 }
 
-#heb {
-font-family: "Rubik";
+a, a:active {
+text-decoration: none;
+color: DodgerBlue;
 }
 
-.videos {
-display: flex;
-flex-direction: row;
-}
-
-.pictures {
-display: flex;
-}
-
-#avideo, #fvideo {
-flex: 1;
-height: 300px;
-border: 2px solid black;
-margin: 20px;
-}
-
-#apic1, #fpic1, #apic2, #fpic2 {
-flex: 1;
-height: 200px;
-border: 2px solid black;
-margin: 20px;
+a:hover {
+color: #0f7cdb;
 }
