@@ -4,6 +4,7 @@
 
 html {
 max-width: 960px;
+font-family: "Merriweather", "Open Sans", serif, sans-serif;
 }
 
 body {
@@ -17,14 +18,15 @@ body {
 
 main {
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-gap: 20px;
+  grid-template-columns: 640px 250px;
+  /*grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));*/
   grid-template-areas:
-    "header header header"
-    "navigation navigation navigation"
-    "content content sidebar"
-    "content content sidebar"
-    "footer footer footer"
+    "header header"
+    "navigation navigation"
+    "content sidebar"
+    "content sidebar"
+    "footer footer"
 }
 
 header {
@@ -32,6 +34,7 @@ header {
   background-image: url('../media/annie-spratt-96526-1000.jpg');
   background-repeat: no-repeat;
   height: 200px;
+  border-radius: 10px;
 }
 
 nav {
@@ -43,6 +46,7 @@ aside {
   border: 2px solid #3c3e42;
   border-radius: 10px;
   background-color: #3c3e42;
+  padding: 10px;
 }
 
 article {
@@ -60,9 +64,14 @@ footer {
   background-color: #3c3e42;
 }
 
+h1, h2, h3 {
+  font-family: Merriweather, serif;
+}
+
 h1 {
-  font-family: "Merriweather", serif;
   font-size: 32px;
+  padding: 20px;
+  text-shadow: 2px 3px 3px black;
 }
 
 img {
@@ -79,23 +88,29 @@ a {
   display: flex;
   flex-direction: row;
   align-content: stretch;
+  padding: 5px;
 }
 
 #soon {
 text-transform: uppercase;
+/* transform: rotate(45deg);*/
+position: relative;
+bottom: 70px;
+right: 20px;
 color: darkred;
 border: 4px solid darkred;
 background-color: snow;
 padding: 20px;
 font-family: Merriweather;
 font-size: 1.5rem;
-text-align: right;
+width: 190px;
+float: right;
 }
 
 li {
   flex: 1;
   list-style-type: none;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   padding: 10px;
   background-color: #3c3e42;
 }
